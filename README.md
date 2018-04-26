@@ -1,6 +1,8 @@
 # Modbus-RTU-Communication-Module-on-serial-bus.
 
-This is Modbus RTU Communication Module on serial bus.
+This is Modbus Diagnostic Slave, Simple command line based Modbus slave simulator and test utility.
+
+Protocol Configuration:Modbus RTU over Serial
 
 Tested on ModbusMaster-Master Library on Arduino: https://github.com/4-20ma/ModbusMaster
 
