@@ -26,12 +26,12 @@ def updateParameters():
     8 Byte wide message for all the commands except 'Writing Multiple Coils or registers' and 'Read Write Multiple Registers', They vary according to the byte count
     """
     if(firstSerialData[1][0] == 16 or firstSerialData[1][0] == 15 ):    #Reading data according to the function type. 
-        inputRawdata[0] = firstSerialData[4][0]
+        inputRawdata[0] = firstSerialData[4][0]                         #[0] to convert to decimal
         inputRawdata[1] = firstSerialData[5][0]
         for m in range ((firstSerialData[6][0])+1):
             inputRawdata[(m+2)] = firstSerialData[(m+6)]
     elif(firstSerialData[1][0] == 23):
-        inputRawdata[0] = firstSerialData[4][0]
+        inputRawdata[0] = firstSerialData[4][0]                         #[0] to convert to decimal
         inputRawdata[1] = firstSerialData[5][0]
         inputRawdata[2] = firstSerialData[6]
         inputRawdata[3] = firstSerialData[7]
