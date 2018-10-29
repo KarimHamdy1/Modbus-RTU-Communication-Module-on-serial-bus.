@@ -6,8 +6,11 @@ Protocol Configuration:Modbus RTU over Serial
 
 Tested on ModbusMaster-Master Library on Arduino: https://github.com/4-20ma/ModbusMaster
 
-The module supports all 10 functions of the library.
-
 The module depends on PySerial 3.0 : https://pythonhosted.org/pyserial/index.html
 
-Developed by:Karim Ahmed Hamdy, Email:karimhamdymo@gmail.com
+Functions available :
+    ModbusBegin(Baudrate,comPort,changeFlag,byteSize,stopBits,parityBits)
+    ModbusRead(slaveId)
+    ModbusReadNewData()
+    
+Developed by:Karim Hamdy, Email:karimhamdymo@gmail.com
